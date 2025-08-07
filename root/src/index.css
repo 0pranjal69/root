@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-style: normal;
+}
+
+.amatic {
+  font-family: "Amatic SC", sans-serif;
+  font-style: normal;
+}
+
+.bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+}
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+}
+body::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+/* Custom class to remove number input spinners */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield;
+  /* Firefox */
+}
+
+/* Shared styling */
+.animated-gradient-btn,
+.animated-gradient-btn-prev {
+  background: linear-gradient(70deg, #bbce96, #047A8E,  #035f6c);
+  background-size: 400% 400%;
+  background-position: 0% 50%;
+  transition: background-position 0.5s ease, filter 0.3s ease;
+}
+
+/* Animate on hover: gradient shift to the right (default for Next) */
+.animated-gradient-btn:hover {
+  background-position: 100% 50%;
+  filter: brightness(1.1);
+}
+
+
